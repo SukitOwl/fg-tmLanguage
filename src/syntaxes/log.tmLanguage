@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>scopeName</key>
+        <string>code.log</string>
+        <key>fileTypes</key>
+        <array>
+            <string>log</string>
+        </array>
+        <key>name</key>
+        <string>Log file</string>
+        <key>patterns</key>
+        <array>
+            <dict>
+                <!-- Url " -->
+                <key>match</key>
+                <string>(([\w\./]+/([\w\.-]+))+)</string>
+                <key>name</key>
+                <string>header</string>
+            </dict>
+
+            <dict>
+                <!-- Json key " -->
+                <key>match</key>
+                <string>("(([^"]|(\\"))+?)"\s*:)</string>
+                <key>name</key>
+                <string>constant.language</string>
+            </dict>
+
+
+            <dict>
+                <!-- Quoted strings with " -->
+                <key>match</key>
+                <string>("(.*?)")</string>
+                <key>name</key>
+                <string>string.quoted</string>
+            </dict>
+
+            <dict>
+                <!-- HTTP Method " -->
+                <key>match</key>
+                <string>(\b(GET|PUT|POST|DELETE|PATCH)\b)</string>
+                <key>name</key>
+                <string>constant.regexp</string>
+            </dict>
+
+            <dict>
+                <!-- HTTP Status " -->
+                <key>match</key>
+                <string>(\b[1-5][0-9][0-9]\b)</string>
+                <key>name</key>
+                <string>entity.name.tag.css</string>
+            </dict>
+
+            <dict>
+                <!-- Single line comment " -->
+                <key>match</key>
+                <string>(#.*)</string>
+                <key>name</key>
+                <string>markup.bold</string>
+            </dict>
+
+        </array>
+        <key>uuid</key>
+        <string>ab259404-3072-4cd4-a943-7cbbd32e373f</string>
+    </dict>
+</plist>
