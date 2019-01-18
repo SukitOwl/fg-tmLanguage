@@ -1,76 +1,25 @@
 {
-    "name": "output-colorizer",
-    "displayName": "Output Colorizer",
-    "description": "Syntax highlighting for log files",
-     "version": "0.1.2",
-    "publisher": "IBM",
+    "name": "fg-tmLanguage",
+    "displayName": "fg-tmLanguage",
+    "description": "Make highlight on .fg file",
+    "version": "0.0.1",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.30.0"
     },
     "categories": [
-        "Languages"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer.git"
-    },
-    "author": {
-        "name": "Andrew Trice",
-        "email": "amtrice@us.ibm.com"
-    },
-    "contributors": [
-        {
-            "name": "Jeff Sloyer",
-            "email": "jbsloyer@us.ibm.com"
-        }
+        "Programming Languages"
     ],
     "contributes": {
-        "languages": [
-            {
-                "id": "Log",
-                "aliases": [
-                    "log"
-                ],
-                "extensions": [
-                    ".fg"
-                ],
-                "configuration": "./log.configuration.json",
-                "mimetypes": [
-                    "log",
-                    "text/log",
-                    "text/x-log",
-                    "text/x-code-output",
-                    "x-code-output"
-                ]
-            }
-        ],
-        "grammars": [
-            {
-                "language": "Log",
-                "scopeName": "code.log",
-                "path": "./src/syntaxes/log.tmLanguage"
-            }
-        ]
-    },
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-vinyl-zip": "^1.2.2",
-        "vscode": "^0.11.0"
-    },
-    "galleryBanner": {
-        "color": "#f2f2f2",
-        "theme": "light"
-    },
-    "icon": "github-assets/icon.png",
-    "bugs": {
-        "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/issues"
-    },
-    "license": "MIT",
-    "homepage": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/blob/master/README.md",
-    "keywords": [
-        "IBM",
-        "log",
-        "color",
-        "output"
-    ]
+        "languages": [{
+            "id": "fg",
+            "aliases": ["fg", "fg"],
+            "extensions": [".fg"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fg",
+            "scopeName": "source.fg",
+            "path": "./syntaxes/fg.tmLanguage"
+        }]
+    }
 }

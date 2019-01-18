@@ -1,48 +1,65 @@
-# VSCode Log Output Colorizer
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/LICENSE)
-[![Version](https://vsmarketplacebadge.apphb.com/version/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
+# fg-grammar README
 
-Language extension for VSCode/Bluemix Code that adds syntax colorization for both the output/debug/extensions panel and `*.log` files.
+This is the README for your extension "fg-grammar". After writing up a brief description, we recommend including the following sections.
 
-**Note: If you are using other extensions that colorize the output panel, it could override and disable this extension.**
+## Features
 
-Colorization should work with most themes because it uses common theme token style names. It also works with most instances of the output panel. Initially attempts to match common literals (strings, dates, numbers, guids) and warning|info|error|server|local messages.
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-## Change Log
+For example if there is an image subfolder under your extension project workspace:
 
-* **0.1.2** - Updated for compliance with upcoming VS Code marketplace changes
-* **0.1.1** - Regex updates for color coding support
+\!\[feature X\]\(images/feature-x.png\)
 
-## Contributing
-You can contribute to the project by reading the [Contribution guidelines](https://github.com/IBM-Bluemix/vscode-log-output-colorizer/blob/master/CONTRIBUTING.md)
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## In action
+## Requirements
 
-### VSCode Git Output
-![Colorized Git Output](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-4.jpg)
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-### Default Dark Theme
-![Default Dark Theme](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-1.jpg)
+## Extension Settings
 
-### Default Light Theme
-![Default Light Theme](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-2.jpg)
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-### Night Blue Theme
-![Night Blue Theme](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-3.jpg)
+For example:
 
-## Helpful References:
+This extension contributes the following settings:
 
-* https://code.visualstudio.com/docs/customization/colorizer
-* http://stackoverflow.com/questions/33403324/how-to-create-a-simple-custom-language-colorization-to-vs-code 
-* http://manual.macromates.com/en/language_grammars
+* `myExtension.enable`: enable/disable this extension
+* `myExtension.thing`: set to `blah` to do something
 
-## Support
-You can open an issue on the [GitHub repo](https://github.com/IBM-Bluemix/vscode-log-output-colorizer/issues)
+## Known Issues
 
-## License
-[MIT](LICENSE)
+Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Attribution
-Portions of the language grammar are based off of a StackOverflow question, asked by user [emilast](http://stackoverflow.com/users/736684/emilast) and answered by user [Wosi](http://stackoverflow.com/users/2023316/wosi), availble under [Creative Commons](http://blog.stackoverflow.com/2009/06/attribution-required/) at: http://stackoverflow.com/questions/33403324/how-to-create-a-simple-custom-language-colorization-to-vs-code 
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 1.0.0
+
+Initial release of ...
+
+### 1.0.1
+
+Fixed issue #.
+
+### 1.1.0
+
+Added features X, Y, and Z.
+
+-----------------------------------------------------------------------------------------------------------
+
+## Working with Markdown
+
+**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+
+### For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
