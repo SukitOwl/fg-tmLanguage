@@ -2,7 +2,7 @@
     "name": "fg-tmLanguage",
     "displayName": "fg-tmLanguage",
     "description": "Make highlight on .fg file",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.30.0"
     },
